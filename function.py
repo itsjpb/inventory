@@ -7,12 +7,5 @@ def lambda_handler(event, context):
     
     r.data
     
-    j = {
-        statusCode: 200,
-        headers: {
-            'Content-Type': 'text/html',
-        },
-        body: html,
-    };
     # b'User-agent: *\nDisallow: /deny\n'
     return 'hello from lambda'
